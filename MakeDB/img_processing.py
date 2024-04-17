@@ -112,7 +112,7 @@ def extracting_all_face(path, to_path, callname):
                 rez = recognition_one_face(vector=face.vector, vectors=face_vectors[1], tolerance=0.6)    
                 if rez == True:
                     callname = call
-                    curr_path = f'img/out/{callname}'  
+                    curr_path = f'out/{callname}'  
 
         if not hasattr(COUNTCALL, callname):
             setattr(COUNTCALL, callname, 1)
