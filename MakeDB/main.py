@@ -3,7 +3,6 @@ import os
 from enveronments import COUNTCALL, fill_callnames, СALLSIGN_ID, СALLSIGN_NAME
 from face import OneFace 
 from img_processing import extracting_one_face
-#from sqlalch import add_items_to_callsign
 
 def start_process_images(root_dir):
     """
@@ -55,9 +54,9 @@ def begin_process():
 
 def main():
     # Заполняем таблицу CallNames in DB
-    fill_callnames("img/in")
+    fill_callnames("img")
     # Заполняем начальные вектора для каждого и распихиваем по папкам
-    start_process_images("img/in")
+    start_process_images("img")
 
 if __name__ == '__main__':
     main()
