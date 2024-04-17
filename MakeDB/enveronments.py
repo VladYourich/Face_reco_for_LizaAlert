@@ -5,6 +5,10 @@ import os
 СALLSIGN_NAME   = {}
 
 class СountСalls():
+    '''
+    класс-счётчик, используется для независимой нумерации файлов вырезанных фото лиц 
+    из папки img
+    '''
     def __init__(self, *args, **kwargs) -> None:
         pass
 
@@ -62,4 +66,4 @@ def get_all_vectors() -> dict:
     return vec
 
 VECTORS = get_all_vectors()  # словарь со Всеми векторами всех поисковиков
-COUNTCALL = СountСalls()
+COUNTCALL = СountСalls() # Создание экземпляря класса-счётчика
